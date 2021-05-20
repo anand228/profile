@@ -7,4 +7,10 @@
     <string name="close" />
     <string name="name">Anand Srivastava</string>
     <string name="skills">Skills</string>
+    <string name="training">Training</string>
+    <string name="education">Education</string>
+    <string name="introduction">Introduction</string>
+    <string name="lucknow_u_p">Lucknow, U.P</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="projects">Projects</string>
 </resources>

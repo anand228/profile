@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/name"
             android:layout_centerHorizontal="true"
-            android:text="Lucknow, U.P"
+            android:text="@string/lucknow_u_p"
             android:textColor="@color/black1"
             android:textSize="15sp"
             android:fontFamily="sans-serif-light"
@@ -62,81 +62,231 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/dashbar"
-        android:layout_marginTop="40dp"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:layout_below="@+id/dashbar">
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_weight="1"
-            >
-            <Button
+            android:baselineAligned="false"
+            android:layout_marginTop="20dp"
+            android:id="@+id/button_row1"
+            android:orientation="horizontal">
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Button"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/skill_button"
+                    android:background="@drawable/skills"
+                    />
 
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:icon = "@drawable/ic_baseline_menu_book_24" />
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skills"
+                    android:textColor="@color/black"
+                    />
 
-            <TextView
-                android:layout_marginTop="2dp"
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="11dp"
-                android:text="@string/skills"
-                android:textColor="@color/black"
-                 />
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/edu_button"
+                    android:background="@drawable/book"
+                    />
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/training"
+                    android:background="@drawable/training"
+                    />
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/training"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_marginTop="20dp"
+            android:id="@+id/button_row2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="35dp"
+                >
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/hobby_button"
+                    android:background="@drawable/hobby"
+                    />
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobbies"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="35dp">
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/projects_button"
+                    android:background="@drawable/project"
+                    />
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/projects"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+
+
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_weight="1">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/circle"/>
-            <TextView
-                android:layout_marginTop="2dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Education"
-                android:textColor="@color/black"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_weight="1">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
-                android:pointerIcon="all_scroll"/>
-            <TextView
-                android:layout_marginTop="2dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Training"
-                android:textColor="@color/black"/>
-
-        </LinearLayout>
     </LinearLayout>
+
+
+
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:layout_alignParentBottom="true"
-        android:id="@+id/frame_layout">
+        android:id="@+id/frame_layout"
+        android:background="@drawable/bottomrect">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/intro_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="76dp"
+                android:text="Hello,\nI am an engineering \nundergraduate and my \nbranch is CSE."
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText"
+                android:layout_marginLeft="40dp" />
+
+            <TextView
+                android:id="@+id/intro_head2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="My current goal is to improve \nmy coding and development abilities \nso that I can fet a decent job in the field \nof computer science and be financially \nIndependent."
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intro_head"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/intro_head3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="My long term is to clear the UPSC civil services \nexam and land my dream job."
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intro_head2"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/introduction"
+                android:textColor="@color/white"
+                android:textFontWeight="5"
+                android:padding="5dp"
+                android:background="@drawable/underline"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="40dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="122dp"
+                android:layout_height="108dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/bottomrecimg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </FrameLayout>
 
