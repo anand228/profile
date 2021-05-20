@@ -43,7 +43,12 @@ public class MainActivity extends AppCompatActivity {
         training_b.setOnClickListener(view -> {
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new TrainingFragment()).commit();
         });
-
+        hobbies_b.setOnClickListener(view -> {
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new HobbyFragment()).commit();
+        });
+        projects_b.setOnClickListener(view -> {
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new ProjectsFragment()).commit();
+        });
     }
 
 
