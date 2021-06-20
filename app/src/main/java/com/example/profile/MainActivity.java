@@ -33,24 +33,30 @@ public class MainActivity extends AppCompatActivity {
         frame_home =findViewById(R.id.frame_layout);
 
         skill_b.setOnClickListener(view -> {
-            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new SkillsFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new SkillsFragment()).addToBackStack(null).commit();
         });
 
         education_b.setOnClickListener(view -> {
-            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new EducationFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new EducationFragment()).addToBackStack(null).commit();
         });
 
         training_b.setOnClickListener(view -> {
-            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new TrainingFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new TrainingFragment()).addToBackStack(null).commit();
         });
         hobbies_b.setOnClickListener(view -> {
-            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new HobbyFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new HobbyFragment()).addToBackStack(null).commit();
         });
         projects_b.setOnClickListener(view -> {
-            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new ProjectsFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new ProjectsFragment()).addToBackStack(null).commit();
         });
     }
 
-
-
+    @Override
+    public void onBackPressed() {
+        if (getFragmentManager().getBackStackEntryCount() == 0) {
+            this.finish();
+        } else {
+            getFragmentManager().popBackStack();
+        }
+    }
 }
