@@ -35,7 +35,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="220dp"
         android:src="@drawable/html"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
