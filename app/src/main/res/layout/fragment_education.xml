@@ -10,47 +10,134 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="100dp"
+        android:layout_width="60dp"
         android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/school"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Education"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/school"/>
+        app:layout_constraintVertical_bias="0.566" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.075">
+        app:layout_constraintVertical_bias="0.041">
 
-        <TextView
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="sans-serif"
-            android:text="10th Standard\nSt.Francis' College\npercentage-92.8%\n 2016"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif"
-            android:text="12th Standard\nC.M.S          \npercentage-95.75%\n2018"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underline"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="4dp"
+                android:lineSpacingExtra="2dp"
+                android:padding="4dp"
+                android:text="10th Standard"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="2dp"
+                android:text="School            -  St.Francis' College\nPercentage    -  92.8%
+                \nPassing Year -  2016"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:fontFamily="sans-serif"
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:text="COLLEGE\nA.K.G.E.C\npercentage-74.7%\n2018-22" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underline"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="4dp"
+                android:lineSpacingExtra="2dp"
+                android:padding="4dp"
+                android:text="12th Standard"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="2dp"
+                android:text="School            -  City Montessori School\nPercentage    -  95.75%
+                \nPassing Year -  2018"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underline"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="2dp"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="      College      "
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="2dp"
+                android:text="College            -  A..K.G.E.C\nPercentage    -  74.7%
+                \nPassing Year -  2022"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
